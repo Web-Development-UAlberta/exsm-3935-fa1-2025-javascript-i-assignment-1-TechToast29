@@ -9,3 +9,5 @@ Use `output()` and `await input()` from `./src/js/scripts.js` to allow the user 
 To run the console, launch `./src/index.html`.
 
 Add your README content here.
+
+EXSM 3935 Module 1 Assignment

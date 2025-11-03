@@ -1,14 +1,13 @@
-// eslint-disable-next-line no-unused-vars
-/* global output, input */
-// eslint-disable-next-line no-unused-vars
 async function main() {
-  // This is where the code you're actually experimenting with goes.
+let firstname = await input("Please enter your first name: ");
+let lastname = await input("Please enter your last name: ");
+let fullname = (firstname + " " + lastname);
+let newname = fullname.replace(/o/g, "a");
+output("Your full name is: " + newname);
+let numb1 = Number (await input("Please enter a number larger than 10: "));
+let numb2 = Number (await input("Please enter a number smaller than 10: "));
+let numb3 = Number (numb1 % numb2);
+output(numb3);
 
-  const prompt = "Please enter your name, or 'Exit' to quit: ";
-  let name = await input(prompt);
-
-  while (name !== "Exit") {
-    output("Hello, " + name + "!");
-    name = await input(prompt);
-  }
 }
+
